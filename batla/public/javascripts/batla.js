@@ -1,6 +1,4 @@
 define(["require", "exports", "http", "xml2js"], function(require, exports, __http__, __xml2js__) {
-    /// <reference path="../../defs/node-xml2js.d.ts" />
-    /// <reference path="../../defs/node.d.ts" />
     var http = __http__;
     var xml2js = __xml2js__;
 
@@ -69,4 +67,3 @@ define(["require", "exports", "http", "xml2js"], function(require, exports, __ht
     })(exports.Batla || (exports.Batla = {}));
     var Batla = exports.Batla;
 });
-//@ sourceMappingURL=batla.js.map

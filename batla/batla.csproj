@@ -55,45 +55,54 @@
     <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="public\stylesheets\style.css" />
+    <Content Include="views\layoutBottom.html" />
+    <Content Include="views\index.html" />
+    <Content Include="views\layoutTop.html" />
+    <Content Include="routes\index.js">
+      <DependentUpon>index.ts</DependentUpon>
+    </Content>
+    <TypeScriptCompile Include="routes\index.ts" />
     <TypeScriptCompile Include="defs\mongodb.d.ts" />
+    <Content Include="defs\express3.d.ts" />
     <Content Include="defs\sax-js.d.ts" />
     <Content Include="defs\node-xml2js.d.ts" />
     <Content Include="defs\node.d.ts" />
     <Content Include="defs\require.d.ts" />
-    <Content Include="js\app.js">
+    <Content Include="public\javascripts\app.js">
       <DependentUpon>app.ts</DependentUpon>
     </Content>
-    <Content Include="js\app.ts" />
-    <TypeScriptCompile Include="js\batla\batla.ts" />
-    <Content Include="js\batla\batla.js">
+    <Content Include="public\javascripts\app.ts" />
+    <TypeScriptCompile Include="public\javascripts\batla.ts" />
+    <Content Include="public\javascripts\batla.js">
       <DependentUpon>batla.ts</DependentUpon>
     </Content>
-    <TypeScriptCompile Include="js\db.ts" />
-    <Content Include="js\db.js">
+    <TypeScriptCompile Include="public\javascripts\db.ts" />
+    <Content Include="public\javascripts\db.js">
       <DependentUpon>db.ts</DependentUpon>
     </Content>
-    <Content Include="js\requestHandlers.js">
-      <DependentUpon>requestHandlers.ts</DependentUpon>
-    </Content>
-    <Content Include="js\requestHandlers.ts" />
-    <Content Include="js\router.js">
-      <DependentUpon>router.ts</DependentUpon>
-    </Content>
-    <Content Include="js\router.ts" />
-    <Content Include="js\server.js">
+    <Content Include="server.js">
       <DependentUpon>server.ts</DependentUpon>
     </Content>
-    <Content Include="js\server.ts" />
+    <Content Include="server.ts" />
     <Content Include="main.js" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="js\batla\batla.js.map">
+    <Content Include="public\javascripts\batla.js.map">
       <DependentUpon>batla.ts</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="js\db.js.map">
+    <Content Include="public\javascripts\db.js.map">
       <DependentUpon>db.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="routes\index.js.map">
+      <DependentUpon>index.ts</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" />

@@ -1,8 +1,7 @@
-/// <reference path="batla/batla.ts" />
-/// <reference path="../defs/mongodb.d.ts" />
+/// <reference path="../../defs/mongodb.d.ts" />
 
 import mongodb = require('mongodb');
-import bm = require('batla/batla');
+import bm = require('batla');
 
 var server = new mongodb.Server('localhost', 27017, {auto_reconnect: true})
 var db = new mongodb.Db('mongodb', server, {w: 1});

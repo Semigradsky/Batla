@@ -1,5 +1,5 @@
-/// <reference path="../../defs/node-xml2js.d.ts" />
 /// <reference path="../../defs/node.d.ts" />
+/// <reference path="../../defs/node-xml2js.d.ts" />
 
 import http = require("http");
 import xml2js = require("xml2js");

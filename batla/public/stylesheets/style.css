@@ -1,0 +1,31 @@
+﻿table {
+    width: 100%;
+}
+body {
+    background-color: #3A531D;
+    color: #fff;
+}
+#content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+table td, table th {
+    text-align: center;
+}
+
+#Clan_Top100_Table {
+    max-width: 600px;
+}
+    #Clan_Top100_Table .position {
+        width: 22px;
+    }
+    #Clan_Top100_Table .image {
+        width: 130px;
+    }
+    #Clan_Top100_Table .rating {
+        width: 70px;
+    }
+    #Clan_Top100_Table .id {
+        width: 70px;
+    }

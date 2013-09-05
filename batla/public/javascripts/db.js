@@ -1,6 +1,4 @@
 define(["require", "exports", 'mongodb'], function(require, exports, __mongodb__) {
-    /// <reference path="batla/batla.ts" />
-    /// <reference path="../defs/mongodb.d.ts" />
     var mongodb = __mongodb__;
     
 
@@ -38,4 +36,3 @@ define(["require", "exports", 'mongodb'], function(require, exports, __mongodb__
     }
     exports.getWeekTop100Statistic = getWeekTop100Statistic;
 });
-//@ sourceMappingURL=db.js.map

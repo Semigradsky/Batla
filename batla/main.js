@@ -1,9 +1,10 @@
 ﻿var requirejs = require('requirejs');
 
 requirejs.config({
-    baseUrl: 'js',
+    baseUrl: ''
 });
 
-requirejs(['app'], function (app) {
+requirejs(['server'], function (app) {
+    console.log('start');
     app.start();
 });
